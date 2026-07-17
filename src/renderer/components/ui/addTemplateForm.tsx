@@ -34,7 +34,7 @@ export function AddTemplateForm({ template, onSaved, onCancel }: AddTemplateForm
                 if (template) {
                     await window.api.updateTemplate(template.id, newTitle, newBody, newCategory, newTitle)
                     toast.success("Template Updated", {
-                        description: `"${newTitle}" has been updated`
+                        description: `"${newTitle}" has been updated.`
                     })
                 } else {
                     await window.api.addTemplate(newTitle, newBody, newCategory, newTags)

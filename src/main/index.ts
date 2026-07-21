@@ -39,10 +39,10 @@ ipcMain.handle('update-template', (_event, id: number, title: string, body: stri
 // Window parameters function
 function createWindow() {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
-        minWidth: 600,
-        minHeight: 400,
+        width: 1100,
+        height: 700,
+        minWidth: 768,
+        minHeight: 500,
         // Security preferences 
         // Distincting the main process from renderer 
         webPreferences: {

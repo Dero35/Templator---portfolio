@@ -64,8 +64,8 @@ function TemplatesTab() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-8">
-      <Command shouldFilter={false} className="w-full max-w-xl lg:max-w-3xl xl:max-w-5xl">
+    <div className="flex-1 min-h-0 flex items-center justify-center p-8">
+      <Command shouldFilter={false} className="h-auto! w-full max-w-xl lg:max-w-3xl xl:max-w-5xl">
         <CommandInput
           placeholder="Search templates..."
           value={query}
